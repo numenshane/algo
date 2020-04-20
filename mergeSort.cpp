@@ -3,7 +3,7 @@
 #include <assert.h>
 using namespace std;
 
-void shift(int len, int arr[], int pos) // len:2, pos:0
+void shift(int len, int arr[], int pos)
 {
     int maxChild;
     int value;
