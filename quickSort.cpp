@@ -4,15 +4,10 @@ using namespace std;
 
 void quickSort(unsigned int len, int arr[])
 {
-    if (len <= 1) return;
-    if (len == 2 && arr[0] > arr[1])
-    {
-        swap(arr[0], arr[1]);
-        return;
-    }
-    int val = arr[0];
+    if(len <= 1) return;
     unsigned int pos = 0;
-    int beg = 1;
+    int val = arr[pos];
+    int beg = pos;
     int end = len-1;
     
     while(beg < end)
