@@ -14,7 +14,7 @@ void showStack(stack<int> s)
     }
 }
 int main() {
-    // stl stack push/pop top
+    // stl stack top push/pop 
     stack<int> s;
     s.push(10);
     s.push(12);
@@ -24,7 +24,7 @@ int main() {
     s.pop();
     cout << s.top() << endl;
 
-    // queue support push/pop front/back
+    // queue support front/back push/pop 
     queue<int> queue;
     queue.push(1);
     queue.push(2);
@@ -33,7 +33,7 @@ int main() {
     cout << "queue front:" << queue.front() << endl;
     cout << "queue end:" << queue.back() << endl;
     
-    // list support push_back push_front pop_back pop_front
+    // list support front/back push_back push_front pop_back pop_front
     list<int> list;
     list.push_back(1);
     list.push_back(2);
@@ -48,7 +48,7 @@ int main() {
         cout << "elements:" << *iter << endl;
     }
     
-    // stl vector support push_back pop_back insert
+    // stl vector support insert push_back/pop_back , only at back
     vector<int> vect = {1,2,3,4,5};
     vect.insert(vect.begin()+2,100);
     unsigned index=0;
